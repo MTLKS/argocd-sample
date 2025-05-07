@@ -4,7 +4,8 @@ metadata:
   name: ingress-traefik
 spec:
   rules:
-    - http:
+    - host: app.com
+      http:
         paths:
           - path: /
             pathType: Prefix
